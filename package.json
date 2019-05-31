@@ -1,0 +1,23 @@
+{
+  "name": "gql-gen-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.2.0",
+    "@graphql-codegen/typescript": "^1.2.0",
+    "@graphql-codegen/typescript-compatibility": "^1.2.0",
+    "@graphql-codegen/typescript-operations": "^1.2.0",
+    "@graphql-codegen/typescript-react-apollo": "^1.2.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "apollo-client": "^2.6.0",
+    "graphql": "^14.3.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.6"
+  },
+  "scripts": {
+    "start": "yarn && gql-gen && tsc ./generated-types.tsx --jsx react --noEmit"
+  }
+}

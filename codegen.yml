@@ -1,0 +1,13 @@
+schema: './schema.graphql'
+overwrite: true
+generates:
+  generated-types.tsx:
+    documents: src/**/*.tsx
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - typescript-compatibility
+    config:
+      strict: true
+      noNamespaces: true
